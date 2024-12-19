@@ -1,2 +1,2 @@
-# ymtech-electron-test
-YMTECH - Electron 개발 테스트 프로젝트
+이 프로젝트는 package.json에서 다음 스크립트를 사용합니다.:
+- start: 메인 서버 파일을 실행합니다.
