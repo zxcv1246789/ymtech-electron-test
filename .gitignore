@@ -39,5 +39,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-/react-app/node_modules
-/react-app/build
+/react-app-2/node_modules
+/react-app-2/build
