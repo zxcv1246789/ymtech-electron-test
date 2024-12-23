@@ -3,18 +3,28 @@
   "version": "0.1.0",
   "description": "",
   "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zxcv1246789/ymtech-electron-test"
+  },
   "scripts": {
     "start": "concurrently \"npm run react-start\" \"npm run electron-start\"",
-    "react-start": "cd react-app && npm start",
+    "react-start": "cd react-app && npm run electron-start",
     "electron-start": "wait-on http://localhost:3000 && electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-builder --win --publish never",
+    "deploy": "electron-builder build --win --publish always"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "electron-updater": "^6.3.9"
+  },
   "devDependencies": {
     "concurrently": "^9.0.1",
     "electron": "^33.0.2",
-    "wait-on": "^8.0.1"
+    "wait-on": "^8.0.1",
+    "electron-builder": "^25.1.8"
   }
 }

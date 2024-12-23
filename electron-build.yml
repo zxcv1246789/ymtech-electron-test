@@ -1,0 +1,3 @@
+publish:
+	provide: github;
+    token: { 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 };
